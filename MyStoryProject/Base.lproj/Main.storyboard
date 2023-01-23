@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5uW-Zs-HYr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guts-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStoryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-UO-9IJ" userLabel="PfPView">
+                                <rect key="frame" x="55" y="157" width="283" height="538"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GutsPic" translatesAutoresizingMaskIntoConstraints="NO" id="QH3-7g-n4D">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="233"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQ6-Wo-aep" userLabel="AboutView">
+                                        <rect key="frame" x="22" y="241" width="240" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About / Backstory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbV-ik-Ym5">
+                                                <rect key="frame" x="39" y="4" width="163" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UaA-ji-YnI" appends="YES" id="6IF-bv-6qb"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-xG-Q0s" userLabel="Manga View">
+                                        <rect key="frame" x="21" y="308" width="240" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manga / Anime Adaptation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOK-h1-f6a">
+                                                <rect key="frame" x="1" y="7" width="241" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ket-M9-wRa" appends="YES" id="r7k-6l-ufz"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Kd-aie" userLabel="Facts View">
+                                        <rect key="frame" x="21" y="372" width="240" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bus-An-KG6">
+                                                <rect key="frame" x="76" y="4" width="89" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ReU-1E-yw5" appends="YES" id="83o-ai-rph"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="Va0-7M-jDZ"/>
+                                    <constraint firstAttribute="height" constant="538" id="peV-z6-NxW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kbE-UO-9IJ" secondAttribute="bottom" constant="123" id="ZSj-iW-etD"/>
+                            <constraint firstItem="kbE-UO-9IJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fQf-ei-XN9"/>
+                            <constraint firstItem="kbE-UO-9IJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="gf6-Jc-Sf1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kbE-UO-9IJ" secondAttribute="trailing" constant="55" id="hYa-TX-Fy3"/>
+                            <constraint firstItem="kbE-UO-9IJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="hiA-CZ-cpZ"/>
+                            <constraint firstItem="kbE-UO-9IJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDU-5T-JaU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guts" id="hrb-83-CL6"/>
+                    <connections>
+                        <segue destination="rQa-bv-8GZ" kind="show" identifier="detailSegue" id="pAl-yz-32z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UaA-ji-YnI">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="PEV-VJ-1Pz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ket-M9-wRa">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="MkI-y0-a8H"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ReU-1E-yw5">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="945-rk-eOq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="gq9-xv-kxz">
+            <objects>
+                <viewController id="rQa-bv-8GZ" customClass="DetailViewController" customModule="MyStoryProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXc-Pj-uW5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYA-Ja-Nfc" userLabel="DetailImage">
+                                <rect key="frame" x="46" y="103" width="300" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GutsPic" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-Sr-6HM">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="226"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jq-kh-Mjm">
+                                        <rect key="frame" x="8" y="234" width="284" height="473"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="715" id="aLR-FH-a1C"/>
+                                    <constraint firstAttribute="width" constant="300" id="th7-1R-ZP2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EBF-DJ-RRd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="centerY" secondItem="fXc-Pj-uW5" secondAttribute="centerY" id="1Nv-id-uVF"/>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="bottom" secondItem="EBF-DJ-RRd" secondAttribute="bottom" id="6La-6C-5Hr"/>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="top" secondItem="EBF-DJ-RRd" secondAttribute="top" id="MdT-3v-T0O"/>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="leading" secondItem="EBF-DJ-RRd" secondAttribute="leading" constant="46" id="VpJ-oK-z1D"/>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="centerX" secondItem="fXc-Pj-uW5" secondAttribute="centerX" id="YW9-Vw-uM0"/>
+                            <constraint firstItem="EBF-DJ-RRd" firstAttribute="trailing" secondItem="HYA-Ja-Nfc" secondAttribute="trailing" constant="47" id="poQ-GJ-XQe"/>
+                            <constraint firstItem="HYA-Ja-Nfc" firstAttribute="top" secondItem="EBF-DJ-RRd" secondAttribute="top" id="vy1-qx-nqp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TxD-Cm-hFz"/>
+                    <connections>
+                        <outlet property="DetailImage" destination="D6l-Sr-6HM" id="P9m-wp-oiW"/>
+                        <outlet property="DetailLabel" destination="3Jq-kh-Mjm" id="0WU-mP-NLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDV-7U-3fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896.9465648854962" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RX5-Pu-x8A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5uW-Zs-HYr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V5U-5b-Zzc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KIb-XR-Udr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRa-mY-caX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GutsPic" width="443" height="334"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
